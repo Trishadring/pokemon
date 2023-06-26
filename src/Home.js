@@ -44,7 +44,7 @@ function Home() {
 
   return (
     <div className="App">
-      <div className="Btns">
+      <div className="buttons">
         <button onClick={() => {dispatch({ type: 'Kanto' }); setPokeRegion('Kanto')}}>
           Kanto
         </button>
@@ -58,14 +58,16 @@ function Home() {
         Shinnoh
         </button>
       </div>
-      <div className="pokemonContainer">
+      <div>
           <h1>{pokeRegion}</h1>
+          <div className="pokemonContainer">
           {state.map((number) => (
             <div className="pokemon">
              <Link to={`/${number}`}> <img src={`https://os-cdn.ec-ffmt.com/gl/pokemon/dedicate/pattern-flat/${number}.jpg`} alt={number}/></Link>
               <p>{number}</p>
             </div>
           ))}
+          </div>
       </div>
     </div>
   );

@@ -38,10 +38,15 @@
 }
 
 img{
-  width:500px;
+  width:325px;
 }
 
-.pokemon{
-    float:left;
-    padding:10px;
+
+.pokemonContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: space-around;
 }
