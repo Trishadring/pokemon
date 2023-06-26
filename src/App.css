@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+img{
+  width:500px;
+}
+
+.pokemon{
+    float:left;
+    padding:10px;
+}
